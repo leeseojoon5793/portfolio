@@ -5,3 +5,7 @@ defaultContentLanguage = "ko"
   languageName = "한국어"
   locale = "ko-KR"
   weight = 1
+[params]
+  env = "production"
+  description = "전북대학교 컴퓨터공학 전공 이서준의 포트폴리오"
+  author = "이서준"
