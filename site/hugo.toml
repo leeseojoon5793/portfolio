@@ -22,9 +22,14 @@ defaultContentLanguage = "ko"
     imageTitle = "이서준 아바타"
     imageWidth = 120
     imageHeight = 120
-    [menu]
-[[menu.main]]
+[menu]
+  [[menu.main]]
     identifier = "about"
     name = "소개"
     pageRef = "/about"
     weight = 10
+  [[menu.main]]
+    identifier = "projects"
+    name = "프로젝트"
+    pageRef = "/projects"
+    weight = 20
