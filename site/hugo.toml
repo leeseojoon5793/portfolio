@@ -22,6 +22,16 @@ defaultContentLanguage = "ko"
     imageTitle = "이서준 아바타"
     imageWidth = 120
     imageHeight = 120
+
+    [[params.profileMode.buttons]]
+      name = "소개"
+      url = "about/"
+    [[params.profileMode.buttons]]
+      name = "프로젝트"
+      url = "projects/"
+    [[params.profileMode.buttons]]
+      name = "학습 기록"
+      url = "posts/"
 [menu]
   [[menu.main]]
     identifier = "about"
