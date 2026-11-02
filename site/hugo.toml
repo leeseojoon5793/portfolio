@@ -33,3 +33,8 @@ defaultContentLanguage = "ko"
     name = "프로젝트"
     pageRef = "/projects"
     weight = 20
+  [[menu.main]]
+    identifier = "posts"
+    name = "학습 기록"
+    pageRef = "/posts"
+    weight = 30
