@@ -34,3 +34,6 @@ ShowToc: true
 | Python Flask | 동아리 사이트 팀 저장소의 서버 스택 |
 | Kotlin / Android | 모바일 프로그래밍 수업 실습 |
 | C (Ubuntu) | 리눅스 프로그래밍 실습 과제 작성·제출 |
+## 연락
+
+- GitHub: [leeseojoon5793](https://github.com/leeseojoon5793)
