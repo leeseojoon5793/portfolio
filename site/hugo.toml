@@ -14,3 +14,7 @@ defaultContentLanguage = "ko"
   ShowCodeCopyButtons = true
   ShowToc = true
   ShowPostNavLinks = true
+[params.profileMode]
+    enabled = true
+    title = "이서준"
+    subtitle = "전북대학교 컴퓨터공학 전공 · 웹 서비스와 AI 개발을 공부하는 학생 개발자"
