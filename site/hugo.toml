@@ -1,1 +1,7 @@
 title = "이서준 포트폴리오"
+defaultContentLanguage = "ko"
+
+[languages.ko]
+  languageName = "한국어"
+  locale = "ko-KR"
+  weight = 1
