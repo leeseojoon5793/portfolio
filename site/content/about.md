@@ -24,3 +24,13 @@ ShowToc: true
 1. 이 포트폴리오로 익힌 `Git → GitHub Actions → GitHub Pages` 배포 흐름을 팀 프로젝트에도 적용한다.
 2. 작업을 작게 나눠 커밋하고, 커밋 메시지에 변경 내용을 정확히 적는다.
 3. 기능을 하나 만들 때마다 이 사이트의 학습 기록에 과정과 오류 해결 내용을 정리한다.
+## 사용 기술과 적용 사례
+
+| 기술·도구 | 실제 사용 사례 |
+|---|---|
+| Git / GitHub | 이 사이트 저장소를 `main` 브랜치로 관리하고, 수정할 때마다 commit·push |
+| GitHub Actions / Pages | push하면 Hugo로 빌드해서 GitHub Pages에 자동 배포 |
+| Hugo | PaperMod 테마로 메뉴·프로필·언어 설정을 직접 구성 |
+| Python Flask | 동아리 사이트 팀 저장소의 서버 스택 |
+| Kotlin / Android | 모바일 프로그래밍 수업 실습 |
+| C (Ubuntu) | 리눅스 프로그래밍 실습 과제 작성·제출 |
