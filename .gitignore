@@ -10,3 +10,9 @@
 **/resources/_gen/
 **/.hugo_build.lock
 /.github-pages-setup-backups/
+# OS·에디터 임시 파일
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
