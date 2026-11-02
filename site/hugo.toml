@@ -32,6 +32,11 @@ defaultContentLanguage = "ko"
     [[params.profileMode.buttons]]
       name = "학습 기록"
       url = "posts/"
+
+  [[params.socialIcons]]
+    name = "github"
+    title = "GitHub (leeseojoon5793)"
+    url = "https://github.com/leeseojoon5793"
 [menu]
   [[menu.main]]
     identifier = "about"
