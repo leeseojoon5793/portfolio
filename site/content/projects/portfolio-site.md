@@ -32,6 +32,10 @@ ShowToc: true
 - `site/hugo.toml`에 한국어 설정, 프로필 화면, 아바타, 메뉴, 이동 버튼, GitHub 링크 구성
 - 소개·프로젝트·학습 기록 페이지 작성
 - 스크립트가 넣은 예시 글과 로컬 빌드 결과(`site/public`)를 정리
+- 공개 사이트를 점검하다 사이트 이름이 테마 기본값으로 남은 문제를 발견하고, 설정 파일 우선순위를 바로잡아 해결
+- 검색 페이지와 검색용 데이터(`index.json`) 설정
+- 키보드 초점 테두리, 긴 글 줄바꿈, 좁은 화면의 표·이미지 처리 CSS 추가 (`site/assets/css/extended/custom.css`)
+- GitHub 아이콘 링크의 이름 표기를 고치고 화면 읽기용 이름(`aria-label`) 추가 (`site/layouts/_partials/social_icons.html`)
 
 ## 수행 과정
 
