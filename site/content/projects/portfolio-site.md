@@ -47,3 +47,10 @@ ShowToc: true
 ### 선택 이유: 메뉴 링크에 `pageRef` 사용
 
 이 사이트는 `github.io/portfolio/`처럼 저장소 이름이 붙은 하위 경로에 배포됩니다. 메뉴 주소를 `/about/`처럼 직접 쓰면 `github.io/about/`으로 이동해 깨질 수 있습니다. 그래서 실제 페이지를 가리키는 `pageRef`를 써서 Hugo가 하위 경로까지 포함한 주소를 만들도록 했습니다.
+
+## 결과
+
+- **공개 사이트:** [leeseojoon5793.github.io/portfolio](https://leeseojoon5793.github.io/portfolio/)
+- **자동 배포:** `main`에 push하면 GitHub Actions가 자동으로 실행되어 1~2분 안에 사이트가 갱신됩니다. 저장소의 [Actions 기록](https://github.com/leeseojoon5793/portfolio/actions)에서 실행 결과를 확인할 수 있습니다.
+- **화면 구성:** 홈 프로필(이름·소개·아바타·GitHub 링크) → 소개 / 프로젝트 / 학습 기록 페이지로 이동하는 메뉴와 버튼이 동작합니다.
+- **설정 확인:** 페이지가 한국어(`lang="ko"`)로 생성되고, 다크모드 전환이 동작합니다.
