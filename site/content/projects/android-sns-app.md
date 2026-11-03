@@ -38,3 +38,14 @@ ShowToc: true
 | 게시물 삭제 | 내 게시물 메뉴에서 삭제 |
 
 **사용 기술:** Kotlin, Android Studio, Firebase (Authentication · Firestore · Storage), Glide, RecyclerView, ViewBinding
+
+## 수행 과정
+
+1. **화면 설계** — 하단 메뉴(홈 · 메시지 · 검색 · 업로드 · 프로필)를 기준으로 필요한 화면 11개를 정했습니다.
+2. **로그인 연결** — Firebase 프로젝트를 만들고 Authentication으로 회원가입·로그인을 먼저 구현했습니다.
+3. **게시물 기능** — 업로드 → 피드 → 좋아요·댓글 → 삭제 순서로, 앱의 핵심 흐름부터 만들었습니다.
+4. **소셜 기능** — 프로필, 팔로우, 검색, 1:1 메시지를 이어서 추가했습니다.
+
+### 선택 이유: 서버 대신 Firebase
+
+혼자 기말 기간 안에 완성해야 해서 서버를 따로 만들 시간이 없었습니다. Firebase는 로그인(Authentication), 데이터 저장(Firestore), 사진 파일 저장(Storage)을 한 번에 제공하고, 안드로이드 앱에서 바로 연결할 수 있습니다. 그래서 서버 코드 없이 앱 기능 구현에 시간을 쓰기 위해 Firebase를 선택했습니다.
