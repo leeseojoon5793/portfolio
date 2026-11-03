@@ -20,3 +20,15 @@ ShowToc: true
 ## 목적
 
 수업에서 배운 정적 웹 배포를 실제로 적용해서, **코드를 push하면 사람이 손대지 않아도 사이트가 다시 빌드·배포되는 구조**를 직접 만들어 보는 것이 목표였습니다. 동시에 제 소개와 활동을 한곳에 정리해 둘 공간이 필요했습니다.
+
+## 내가 한 일
+
+개인 활동이라 아래 작업을 모두 직접 했습니다.
+
+- Hugo Themes에서 PaperMod 테마를 골라 ZIP으로 받고, 수업 제공 스크립트(`prepare_github_pages.py`)로 배포 준비
+- 로컬 폴더를 `main` 브랜치로 Git 초기화하고 GitHub 저장소에 연결
+- GitHub Pages의 Source를 GitHub Actions로 설정
+- 배포 빌드가 내 설정 파일(`site/hugo.toml`)을 읽지 않던 문제를 찾아 `.github-pages.json` 수정
+- `site/hugo.toml`에 한국어 설정, 프로필 화면, 아바타, 메뉴, 이동 버튼, GitHub 링크 구성
+- 소개·프로젝트·학습 기록 페이지 작성
+- 스크립트가 넣은 예시 글과 로컬 빌드 결과(`site/public`)를 정리
