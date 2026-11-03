@@ -13,3 +13,14 @@ input:focus-visible {
     overflow-wrap: anywhere;
     word-break: keep-all;
 }
+
+.post-content table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+}
