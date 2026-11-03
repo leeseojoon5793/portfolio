@@ -36,3 +36,24 @@ python --version
 ```
 
 다른 운영체제는 [Hugo 설치 안내](https://gohugo.io/installation/)를 참고하세요.
+
+## 로컬에서 확인
+
+```powershell
+git clone https://github.com/leeseojoon5793/portfolio.git
+cd portfolio/site
+hugo server --config pages.json,hugo.toml
+```
+
+브라우저에서 http://localhost:1313/portfolio/ 를 엽니다. 파일을 저장하면 자동으로 새로고침됩니다. 종료는 `Ctrl + C`.
+
+> 설정 파일은 `pages.json,hugo.toml` 순서로 적어야 합니다. Hugo는 **뒤에 적은 파일이 우선**이라, 순서가 바뀌면 `site/hugo.toml`의 제목 등이 스크립트 기본값으로 덮어써집니다.
+
+## 빌드
+
+```powershell
+cd site
+hugo --gc --minify --config pages.json,hugo.toml
+```
+
+결과는 `site/public/`에 생성됩니다(`.gitignore`로 제외됨). 배포용 빌드는 GitHub Actions가 `.github/pages_build.py --build`로 따로 실행합니다.
