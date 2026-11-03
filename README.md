@@ -16,3 +16,23 @@ Hugo와 GitHub Actions로 만든 개인 소개 사이트입니다.
 | 수업 스크립트 | `prepare_github_pages.py` 3.1 | 배포 워크플로·`site/` 생성 |
 
 배포 빌드는 `.github/workflows/hugo-pages.yml`에 고정된 Hugo 0.167.0으로 실행됩니다.
+
+## 설치 (Windows)
+
+PowerShell에서 실행합니다. 설치 후에는 **터미널(또는 VS Code)을 완전히 껐다 다시 열어야** 새 명령을 인식합니다.
+
+```powershell
+winget install Hugo.Hugo.Extended
+winget install Git.Git
+winget install Python.Python.3.12
+```
+
+설치 확인:
+
+```powershell
+hugo version
+git --version
+python --version
+```
+
+다른 운영체제는 [Hugo 설치 안내](https://gohugo.io/installation/)를 참고하세요.
