@@ -57,3 +57,20 @@ hugo --gc --minify --config pages.json,hugo.toml
 ```
 
 결과는 `site/public/`에 생성됩니다(`.gitignore`로 제외됨). 배포용 빌드는 GitHub Actions가 `.github/pages_build.py --build`로 따로 실행합니다.
+
+## 수정할 파일 위치
+
+| 바꾸려는 것 | 파일 |
+|---|---|
+| 사이트 제목, 메뉴, 홈 프로필 문구·버튼, GitHub 링크 | `site/hugo.toml` |
+| 소개 페이지 | `site/content/about.md` |
+| 프로젝트 목록 안내 / 각 프로젝트 | `site/content/projects/_index.md` / `site/content/projects/*.md` |
+| 학습 기록 글 | `site/content/posts/*.md` |
+| 검색 페이지 | `site/content/search.md` |
+| 프로필 아바타 | `site/assets/images/avatar.svg` |
+| 추가 스타일(초점 표시, 줄바꿈 등) | `site/assets/css/extended/custom.css` |
+| 테마 화면 덮어쓰기(GitHub 아이콘 링크) | `site/layouts/_partials/social_icons.html` |
+| 배포 빌드가 읽는 설정 파일 순서 | `.github-pages.json`의 `"config"` |
+| 배포 워크플로(수업 스크립트가 생성) | `.github/workflows/hugo-pages.yml` |
+
+`site/themes/template/`(테마 복사본)과 최상위의 `assets/`, `layouts/`(테마 원본)는 직접 수정하지 않습니다. 테마 화면을 바꿀 때는 `site/layouts/`에
