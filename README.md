@@ -73,4 +73,22 @@ hugo --gc --minify --config pages.json,hugo.toml
 | 배포 빌드가 읽는 설정 파일 순서 | `.github-pages.json`의 `"config"` |
 | 배포 워크플로(수업 스크립트가 생성) | `.github/workflows/hugo-pages.yml` |
 
-`site/themes/template/`(테마 복사본)과 최상위의 `assets/`, `layouts/`(테마 원본)는 직접 수정하지 않습니다. 테마 화면을 바꿀 때는 `site/layouts/`에
+`site/themes/template/`(테마 복사본)과 최상위의 `assets/`, `layouts/`(테마 원본)는 직접 수정하지 않습니다. 테마 화면을 바꿀 때는 `site/layouts/`에 같은 경로로 파일을 만들어 덮어씁니다.
+
+## 수정 후 재배포
+
+최상위 폴더에서 실행합니다.
+
+```powershell
+git add <수정한 파일>
+git commit -m '변경 내용을 설명하는 메시지'
+git push origin main
+```
+
+1. 저장소 [Actions](https://github.com/leeseojoon5793/portfolio/actions) 탭에서 `Deploy Hugo to GitHub Pages` 실행의 `build`, `deploy`가 모두 성공(초록 체크)인지 확인합니다. 보통 1~2분 걸립니다.
+2. 실패(빨간 X)하면 실행을 눌러 빨간 단계의 로그를 확인합니다.
+3. 공개 사이트를 **시크릿 창** 또는 강력 새로고침(`Ctrl + Shift + R`)으로 열어 변경이 반영됐는지 확인합니다. GitHub Pages와 브라우저 캐시 때문에 일반 창에서는 잠시 이전 화면이 보일 수 있습니다.
+
+### 최초 1회 설정
+
+저장소 `Settings → Pages → Build and deployment → Source`를 **GitHub Actions**로 설정합니다. 설정 전에 push해서 실행이 실패했다면, 설정 후 Actions에서 **Re-run all jobs**로 다시 실행합니다.
