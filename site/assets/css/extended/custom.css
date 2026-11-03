@@ -6,3 +6,10 @@ input:focus-visible {
     outline-offset: 3px;
     border-radius: 4px;
 }
+
+.post-content,
+.post-title,
+.entry-content {
+    overflow-wrap: anywhere;
+    word-break: keep-all;
+}
